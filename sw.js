@@ -1,8 +1,8 @@
-var staticCacheName = 'restaurant-cache';
+let staticCacheName = 'restaurant-cache';
 
 let urlToCache = [
-    '/',
-    './index.html',    
+    './',
+    './index.html',
     './restaurant.html',
     './css/styles.css',
     './data/restaurants.json',
@@ -21,6 +21,10 @@ let urlToCache = [
     './js/dbhelper.js',
 
 ];
+
+/**
+ * Installation of service worker
+ */
 self.addEventListener('install', function (event) {
 
     event.waitUntil(
@@ -34,6 +38,10 @@ self.addEventListener('install', function (event) {
     );
 });
 
+
+/**
+ * Activation of service worker
+ */
 self.addEventListener('activate', function (event) {
     event.waitUntil(
         caches.keys().then(function (cacheNames) {
@@ -49,6 +57,9 @@ self.addEventListener('activate', function (event) {
     );
 });
 
+/**
+ * Fetching for offline content viewing
+ */
 self.addEventListener('fetch', function (event) {
     event.respondWith(
         caches.match(event.request).then(function (response) {
