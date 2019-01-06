@@ -1,4 +1,4 @@
-var staticCacheName = 'restaurant-cache-1';
+var staticCacheName = 'restaurant-cache';
 
 let urlToCache = [
     '/',
