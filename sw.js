@@ -2,6 +2,7 @@ var staticCacheName = 'restaurant-cache';
 
 let urlToCache = [
     '/',
+    './index.html',    
     './restaurant.html',
     './css/styles.css',
     './data/restaurants.json',
