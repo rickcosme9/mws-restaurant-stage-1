@@ -13,7 +13,7 @@ class DBHelper {
     //return `http://localhost:${port}/data/restaurants.json`;
 
     //for github
-    return `https://rickcosme9.github.io/restaurant-review/data/restaurants.json`;
+    return `./data/restaurants.json`;
   }
 
   /**
