@@ -1,6 +1,6 @@
 # Udacity Restaurant Reviews app project
 
-This is the final project from Udacity's Nanodegree program Front-End Web Developer.<br> 
+This is the 6th project from Udacity's Nanodegree program Front-End Web Developer.<br> 
 
 # Run locally
 Click on Clone or download button from this repository page, then select Download ZIP.
